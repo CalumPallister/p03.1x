@@ -33,3 +33,17 @@ def run_tests():
 
 # Edit this code
 def is_prime(n):
+
+    nonprime = 0
+    for i in range(2, n):
+        if n % i == 0:
+            nonprime = 1
+
+    if nonprime == 1:
+        print("Non-Prime")
+    elif n == 1:
+        print("Non-Prime")
+    else:
+        print("Prime")
+            
+

@@ -29,4 +29,13 @@ def run_tests():
 
 # Edit this code
 def add_primes(n):
-
+    total = 0
+    for i in range(2,n+1):
+        prime = True
+        for o in range(2,i):
+            if i % o == 0:
+                prime = False
+        if prime == True:
+            total = total + i
+    print(total)
+            
