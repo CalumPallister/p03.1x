@@ -29,3 +29,13 @@ def run_tests():
 
 # Edit this code
 def fib(n):
+    fib1 = 0
+    fib2 = 1
+    fibsum = 0
+    for i in range(1, n+1):
+        fibsum = fib2 + fib1
+        if i > 1:
+            fib1 = fib2
+            fib2 = fibsum
+    print(fibsum)
+        
