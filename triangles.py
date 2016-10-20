@@ -29,3 +29,15 @@ def run_tests():
 
 # Edit this code
 def triangle_number(n):
+    up = 1
+    x = 0
+    for i in range(0, n+1, up):
+
+       
+        if i == n:
+            print(x)
+        else:
+            x = x+up
+            up = up+1
+        
+    
